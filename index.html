@@ -22,23 +22,69 @@
     </header>
     <main>
         <div id="app"></div>
-        <div id="machine"></div>
-        <button class="btn btn-primary" onclick="app.machineController.coin('dollar')">$1</button>
-        <button class="btn btn-primary" onclick="app.machineController.coin('quarter')"> 25 cents</button>
-        <button class="btn btn-primary" onclick="app.machineController.coin('dime')"> 10 cents </button>
-        <button class="btn btn-primary" onclick="app.machineController.coin('nickel')">5 cents </button>
+        <div id="machine" class="text-center"></div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-3">
+                    <button class="btn btn-success btn-block" onclick="app.machineController.coin('dollar')">$1</button>
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-success btn-block" onclick="app.machineController.coin('quarter')"> 25
+                        cents</button>
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-success btn-block" onclick="app.machineController.coin('dime')"> 10 cents
+                    </button>
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-success btn-block" onclick="app.machineController.coin('nickel')">5 cents
+                    </button>
+                </div>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-4 my-2"><button class="btn btn-primary btn-block"
+                        onclick="app.machineController.items('doritos')">1.
+                        Doritos
+                        1.50</button></div>
+                <div class="col-4 my-2"> <button class="btn btn-primary btn-block"
+                        onclick="app.machineController.items('fritos')">2.
+                        Fritos 1.25 </button></div>
+                <div class="col-4 my-2">
+                    <button class="btn btn-primary btn-block" onclick="app.machineController.items('lays')">3. Lays
+                        1.25</button>
+                </div>
+                <div class="col-4">
+                    <button class="btn btn-primary btn-block" onclick="app.machineController.items('skittles')">4.
+                        Skittles
+                        1.00</button></div>
 
-        <button class="btn btn-primary" onclick="app.machineController.item('nickel')">Doritos 1.50</button>
-        <button class="btn btn-primary" onclick="app.machineController.item('nickel')">Fritos 1.25 </button>
-        <button class="btn btn-primary" onclick="app.machineController.item('nickel')">Lays 1.25</button>
-        <button class="btn btn-primary" onclick="app.machineController.item('nickel')">Skittles 1.00</button>
-        <button class="btn btn-primary" onclick="app.machineController.item('nickel')">Snickers 1.00</button>
-        <button class="btn btn-primary" onclick="app.machineController.item('nickel')">Cookies 1.15 </button>
-        <button class="btn btn-primary" onclick="app.machineController.item('nickel')">Crackers .50</button>
-        <button class="btn btn-primary" onclick="app.machineController.item('nickel')">Mints .25</button>
-        <button class="btn btn-primary" onclick="app.machineController.item('nickel')">Gum .25</button>
+                <div class="col-4">
+                    <button class="btn btn-primary btn-block" onclick="app.machineController.items('snickers')">5.
+                        Snickers
+                        1.00</button></div>
 
+                <div class="col-4">
+                    <button class="btn btn-primary btn-block" onclick="app.machineController.items('cookies')">6.
+                        Cookies 1.15
+                    </button></div>
 
+                <div class="col-4 mt-2">
+                    <button class="btn btn-primary btn-block" onclick="app.machineController.items('crackers')">7.
+                        Crackers
+                        .50</button></div>
+
+                <div class="col-4 mt-2">
+                    <button class="btn btn-primary btn-block" onclick="app.machineController.items('mints')">8. Mints
+                        .25</button>
+                </div>
+
+                <div class="col-4 mt-2">
+                    <button class="btn btn-primary btn-block" onclick="app.machineController.items('gum')">9. Gum
+                        .25</button>
+                </div>
+
+            </div>
+        </div>
 
 
 
@@ -52,6 +98,8 @@
     </footer>
 
     <script src="app/main.js" type="module"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.5.1/dist/sweetalert2.all.min.js"></script>
 
 
 

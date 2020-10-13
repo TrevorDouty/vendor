@@ -10,10 +10,40 @@ class MachineService {
   }
   items(itemChosen) {
     let machine = ProxyState.machine;
-    if (machine.[itemChosen] && machine.currentValue >= machine[itemChosen].cost) {
-      machine.currentValue -= machine[itemChosen].cost
-      alert(`Thank you for purchasing ${machine[itemChosen].name}`)
+    // let lowest = machine.item[0].cost
+    // machine.item.forEach(item => {
+    //   if (item.cost < lowest) {
+    //     lowest = item.cost
+    //   }
+    //   console.log(lowest)
+    // })
+    if (machine.currentValue >= machine.item[itemChosen].cost) {
+      machine.currentValue -= machine.item[itemChosen].cost
+      Swal.fire({
+        title: 'Thank you for you purchase Chubby',
+        width: 300,
+        padding: '3em',
+        background: '#fff url(/images/trees.png)',
+        backdrop: `
+          rgba(0,0,123,0.4)
+          url(/assets/img/alert-img2.gif)
+          left top
+          no-repeat
+        `
+      })
+
+      // Swal.fire({
+      //   title: 'Error!',
+      //   text: 'Do you want to continue',
+      //   icon: 'error',
+      //   confirmButtonText: 'Cool'
+      // })
+
+
+      // alert(`Thank you for purchasing ${machine.item[itemChosen].name}`)
+      ProxyState.machine = machine
     }
+
 
   }
 

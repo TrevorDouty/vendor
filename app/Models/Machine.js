@@ -2,9 +2,9 @@ export default class Machine {
   constructor() {
     this.coins = {
       dollar: 1.00,
-      quarter: 25,
-      dime: 10,
-      nickel: 5,
+      quarter: .25,
+      dime: .10,
+      nickel: .5,
     }
     this.item = {
       doritos: {
@@ -61,5 +61,6 @@ export default class Machine {
       }
     }
     this.currentValue = 0
+    this.amountReturned = 0
   }
 }
