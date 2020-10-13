@@ -17,5 +17,6 @@ export default class Machine {
       mints: "mints",
       gum: "gum"
     }
+    this.currentValue = 0
   }
 }
