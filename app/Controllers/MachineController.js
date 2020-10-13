@@ -21,4 +21,8 @@ export default class MachineController {
     machineService.coin(coinChosen)
   }
 
+  item(itemChosen) {
+    machineService.items(itemChosen)
+  }
+
 }
