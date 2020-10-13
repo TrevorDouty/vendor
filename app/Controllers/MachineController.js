@@ -1,5 +1,4 @@
 import { ProxyState } from "../AppState.js";
-import { MachineService } from "../Service/MachineService.js";
 import { machineService } from "../Services/MachineService.js";
 
 function _draw() {
@@ -18,7 +17,8 @@ export default class MachineController {
     _draw()
   }
 
-  coinSlot(coinChosen) {
-    machineService.coinSlot(coinChosen)
+  coin(coinChosen) {
+    machineService.coin(coinChosen)
   }
+
 }
